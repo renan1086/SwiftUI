@@ -27,7 +27,9 @@
 		6C9BA3DA285BC47C0012CD0F /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9BA3D9285BC47C0012CD0F /* MotionAnimationView.swift */; };
 		6C9D68FD2860E6C00089E4B4 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9D68FC2860E6C00089E4B4 /* AnimalGridItemView.swift */; };
 		6C9D69032860ECC70089E4B4 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9D69022860ECC70089E4B4 /* Stickers.xcassets */; };
-		6C9D69072860ECC70089E4B4 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C9D69002860ECC40089E4B4 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C9D69072860ECC70089E4B4 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C9D69002860ECC40089E4B4 /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CA14CD228620D0B008AE025 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA14CD128620D0B008AE025 /* CenterModifier.swift */; };
+		6CA14CD428620D77008AE025 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA14CD328620D77008AE025 /* CreditsView.swift */; };
 		6CD397A3285A5C4E00D59BA3 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD397A2285A5C4E00D59BA3 /* AfricaApp.swift */; };
 		6CD397A5285A5C4E00D59BA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD397A4285A5C4E00D59BA3 /* ContentView.swift */; };
 		6CD397A7285A5C5200D59BA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD397A6285A5C5200D59BA3 /* Assets.xcassets */; };
@@ -99,6 +101,10 @@
 		6C9D69002860ECC40089E4B4 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9D69022860ECC70089E4B4 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		6C9D69042860ECC70089E4B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA14CD128620D0B008AE025 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		6CA14CD328620D77008AE025 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		6CA14CD528620E89008AE025 /* Stickers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stickers.entitlements; sourceTree = "<group>"; };
+		6CA14CD628620EE3008AE025 /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
 		6CD3979F285A5C4E00D59BA3 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD397A2285A5C4E00D59BA3 /* AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaApp.swift; sourceTree = "<group>"; };
 		6CD397A4285A5C4E00D59BA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 				6C9BA3D7285BBC400012CD0F /* MapAnnotationView.swift */,
 				6C9BA3D9285BC47C0012CD0F /* MotionAnimationView.swift */,
 				6C9D68FC2860E6C00089E4B4 /* AnimalGridItemView.swift */,
+				6CA14CD328620D77008AE025 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,10 +193,19 @@
 		6C9D69012860ECC40089E4B4 /* Stickers */ = {
 			isa = PBXGroup;
 			children = (
+				6CA14CD528620E89008AE025 /* Stickers.entitlements */,
 				6C9D69022860ECC70089E4B4 /* Stickers.xcassets */,
 				6C9D69042860ECC70089E4B4 /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		6CA14CD028620CF0008AE025 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				6CA14CD128620D0B008AE025 /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 		6CD39796285A5C4E00D59BA3 = {
@@ -213,6 +229,8 @@
 		6CD397A1285A5C4E00D59BA3 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				6CA14CD628620EE3008AE025 /* Africa.entitlements */,
+				6CA14CD028620CF0008AE025 /* Modifier */,
 				6C9BA3D0285BB61B0012CD0F /* Helpers */,
 				6C5C4486285B5A0A007B8116 /* Model */,
 				6C5C4483285B59A4007B8116 /* View */,
@@ -402,6 +420,7 @@
 				6C9BA3D2285BB6400012CD0F /* VideoPlayerHelper.swift in Sources */,
 				6C5C4488285B5A21007B8116 /* CoverImageModel.swift in Sources */,
 				6C5C4496285BA28C007B8116 /* InsetMapView.swift in Sources */,
+				6CA14CD228620D0B008AE025 /* CenterModifier.swift in Sources */,
 				6C9BA3D8285BBC400012CD0F /* MapAnnotationView.swift in Sources */,
 				6C5C448E285B95B0007B8116 /* HeadingView.swift in Sources */,
 				6C5C4485285B59D3007B8116 /* CoverImageView.swift in Sources */,
@@ -412,6 +431,7 @@
 				6C5C4482285B598D007B8116 /* CodableBundleExtension.swift in Sources */,
 				6CD397D5285A614F00D59BA3 /* GalleryView.swift in Sources */,
 				6C9BA3DA285BC47C0012CD0F /* MotionAnimationView.swift in Sources */,
+				6CA14CD428620D77008AE025 /* CreditsView.swift in Sources */,
 				6C5C4490285B96D9007B8116 /* InsetGalleryView.swift in Sources */,
 				6C9BA3D4285BB65E0012CD0F /* VideoPlayerView.swift in Sources */,
 			);
@@ -422,6 +442,7 @@
 /* Begin PBXTargetDependency section */
 		6C9D69062860ECC70089E4B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 6C9D68FF2860ECC40089E4B4 /* Stickers */;
 			targetProxy = 6C9D69052860ECC70089E4B4 /* PBXContainerItemProxy */;
 		};
@@ -432,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = Stickers/Stickers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A89YPB44C2;
@@ -443,6 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.teste.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = Stickers/Stickers.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A89YPB44C2;
@@ -463,6 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.teste.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -587,6 +612,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -606,6 +632,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teste.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -617,6 +644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -636,6 +664,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teste.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

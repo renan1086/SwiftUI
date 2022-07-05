@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C13DD05287476A000929C43 /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C13DD04287476A000929C43 /* AvocadosView.swift */; };
+		6C13DD07287476CD00929C43 /* RipeningStageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C13DD06287476CD00929C43 /* RipeningStageView.swift */; };
+		6C13DD092874770E00929C43 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C13DD082874770E00929C43 /* SettingsView.swift */; };
+		6C13DD0B2874778400929C43 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C13DD0A2874778400929C43 /* AppView.swift */; };
+		6C13DD0D2874875E00929C43 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C13DD0C2874875E00929C43 /* HeaderView.swift */; };
 		6C63CC7F2873719C008DB288 /* AvocadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C63CC7E2873719C008DB288 /* AvocadosApp.swift */; };
 		6C63CC812873719C008DB288 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C63CC802873719C008DB288 /* ContentView.swift */; };
 		6C63CC832873719F008DB288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C63CC822873719F008DB288 /* Assets.xcassets */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C13DD04287476A000929C43 /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
+		6C13DD06287476CD00929C43 /* RipeningStageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStageView.swift; sourceTree = "<group>"; };
+		6C13DD082874770E00929C43 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6C13DD0A2874778400929C43 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		6C13DD0C2874875E00929C43 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		6C63CC7B2873719C008DB288 /* Avocados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C63CC7E2873719C008DB288 /* AvocadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosApp.swift; sourceTree = "<group>"; };
 		6C63CC802873719C008DB288 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C13DCFF2874747F00929C43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C63CC802873719C008DB288 /* ContentView.swift */,
+				6C13DD04287476A000929C43 /* AvocadosView.swift */,
+				6C13DD06287476CD00929C43 /* RipeningStageView.swift */,
+				6C13DD082874770E00929C43 /* SettingsView.swift */,
+				6C13DD0A2874778400929C43 /* AppView.swift */,
+				6C13DD0C2874875E00929C43 /* HeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C13DD002874748D00929C43 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6C13DD012874749500929C43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6C63CC722873719C008DB288 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +91,11 @@
 		6C63CC7D2873719C008DB288 /* Avocados */ = {
 			isa = PBXGroup;
 			children = (
+				6C13DD012874749500929C43 /* Model */,
+				6C13DD002874748D00929C43 /* Data */,
+				6C13DCFF2874747F00929C43 /* View */,
 				6C63CC8E28737A83008DB288 /* Info.plist */,
 				6C63CC7E2873719C008DB288 /* AvocadosApp.swift */,
-				6C63CC802873719C008DB288 /* ContentView.swift */,
 				6C63CC822873719F008DB288 /* Assets.xcassets */,
 				6C63CC8C28737878008DB288 /* LaunchScreen.storyboard */,
 				6C63CC842873719F008DB288 /* Preview Content */,
@@ -143,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C13DD092874770E00929C43 /* SettingsView.swift in Sources */,
 				6C63CC812873719C008DB288 /* ContentView.swift in Sources */,
+				6C13DD0B2874778400929C43 /* AppView.swift in Sources */,
+				6C13DD07287476CD00929C43 /* RipeningStageView.swift in Sources */,
 				6C63CC7F2873719C008DB288 /* AvocadosApp.swift in Sources */,
+				6C13DD05287476A000929C43 /* AvocadosView.swift in Sources */,
+				6C13DD0D2874875E00929C43 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

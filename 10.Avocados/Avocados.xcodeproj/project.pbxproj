@@ -30,6 +30,7 @@
 		6CC349D62875FFE300EE6CBE /* RecipeCookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC349D52875FFE300EE6CBE /* RecipeCookingView.swift */; };
 		6CC349D82876010C00EE6CBE /* RecipeRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC349D72876010C00EE6CBE /* RecipeRatingView.swift */; };
 		6CC349DA2876020300EE6CBE /* RecipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC349D92876020300EE6CBE /* RecipeCardView.swift */; };
+		6CC349DC28761A2F00EE6CBE /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC349DB28761A2F00EE6CBE /* RecipeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		6CC349D52875FFE300EE6CBE /* RecipeCookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCookingView.swift; sourceTree = "<group>"; };
 		6CC349D72876010C00EE6CBE /* RecipeRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRatingView.swift; sourceTree = "<group>"; };
 		6CC349D92876020300EE6CBE /* RecipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCardView.swift; sourceTree = "<group>"; };
+		6CC349DB28761A2F00EE6CBE /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				6CC349D52875FFE300EE6CBE /* RecipeCookingView.swift */,
 				6CC349D72876010C00EE6CBE /* RecipeRatingView.swift */,
 				6CC349D92876020300EE6CBE /* RecipeCardView.swift */,
+				6CC349DB28761A2F00EE6CBE /* RecipeDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				6C13DD1B2874A33C00929C43 /* RecipesData.swift in Sources */,
 				6C13DD0F2874A28C00929C43 /* FactModel.swift in Sources */,
 				6C63CC812873719C008DB288 /* ContentView.swift in Sources */,
+				6CC349DC28761A2F00EE6CBE /* RecipeDetailView.swift in Sources */,
 				6CC349D22875B8C900EE6CBE /* DishesView.swift in Sources */,
 				6C13DD0B2874778400929C43 /* AppView.swift in Sources */,
 				6C13DD07287476CD00929C43 /* RipeningStageView.swift in Sources */,

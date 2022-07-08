@@ -11,6 +11,7 @@
 		6C769ADB2878670700EFA87F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769ADA2878670700EFA87F /* ContentView.swift */; };
 		6C769ADD2878670A00EFA87F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C769ADC2878670A00EFA87F /* Assets.xcassets */; };
 		6C769AE02878670A00EFA87F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C769ADF2878670A00EFA87F /* Preview Assets.xcassets */; };
+		6C769AE7287868DD00EFA87F /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 6C769AE6287868DD00EFA87F /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		6C769ADA2878670700EFA87F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C769ADC2878670A00EFA87F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C769ADF2878670A00EFA87F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C769AE6287868DD00EFA87F /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		6C769AE82878694900EFA87F /* Slot-Machine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Slot-Machine-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,8 @@
 		6C769AD72878670700EFA87F /* Slot Machine */ = {
 			isa = PBXGroup;
 			children = (
+				6C769AE82878694900EFA87F /* Slot-Machine-Info.plist */,
+				6C769AE6287868DD00EFA87F /* Sounds */,
 				6C769AD82878670700EFA87F /* Slot_MachineApp.swift */,
 				6C769ADA2878670700EFA87F /* ContentView.swift */,
 				6C769ADC2878670A00EFA87F /* Assets.xcassets */,
@@ -125,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C769AE7287868DD00EFA87F /* Sounds in Resources */,
 				6C769AE02878670A00EFA87F /* Preview Assets.xcassets in Resources */,
 				6C769ADD2878670A00EFA87F /* Assets.xcassets in Resources */,
 			);
@@ -270,9 +276,9 @@
 				DEVELOPMENT_TEAM = A89YPB44C2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Slot-Machine-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +305,9 @@
 				DEVELOPMENT_TEAM = A89YPB44C2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Slot-Machine-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C21DD98287C93C8002C74B8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21DD97287C93C8002C74B8 /* Extensions.swift */; };
+		6C21DD9A287C949D002C74B8 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21DD99287C949D002C74B8 /* Modifiers.swift */; };
+		6C21DD9C287C9577002C74B8 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21DD9B287C9577002C74B8 /* PlaySound.swift */; };
+		6C21DD9E287C95AC002C74B8 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21DD9D287C95AC002C74B8 /* InfoView.swift */; };
+		6C21DDA0287C960A002C74B8 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21DD9F287C960A002C74B8 /* LogoView.swift */; };
+		6C21DDA2287C9854002C74B8 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21DDA1287C9854002C74B8 /* ReelView.swift */; };
 		6C769AD92878670700EFA87F /* Slot_MachineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769AD82878670700EFA87F /* Slot_MachineApp.swift */; };
 		6C769ADB2878670700EFA87F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C769ADA2878670700EFA87F /* ContentView.swift */; };
 		6C769ADD2878670A00EFA87F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C769ADC2878670A00EFA87F /* Assets.xcassets */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C21DD97287C93C8002C74B8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6C21DD99287C949D002C74B8 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		6C21DD9B287C9577002C74B8 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		6C21DD9D287C95AC002C74B8 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		6C21DD9F287C960A002C74B8 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		6C21DDA1287C9854002C74B8 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
 		6C769AD52878670700EFA87F /* Slot Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slot Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C769AD82878670700EFA87F /* Slot_MachineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot_MachineApp.swift; sourceTree = "<group>"; };
 		6C769ADA2878670700EFA87F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,12 +66,13 @@
 		6C769AD72878670700EFA87F /* Slot Machine */ = {
 			isa = PBXGroup;
 			children = (
-				6C769AE82878694900EFA87F /* Slot-Machine-Info.plist */,
-				6C769AE6287868DD00EFA87F /* Sounds */,
-				6C769AD82878670700EFA87F /* Slot_MachineApp.swift */,
-				6C769ADA2878670700EFA87F /* ContentView.swift */,
 				6C769ADC2878670A00EFA87F /* Assets.xcassets */,
+				6C769AE82878694900EFA87F /* Slot-Machine-Info.plist */,
+				6C769AD82878670700EFA87F /* Slot_MachineApp.swift */,
 				6C769ADE2878670A00EFA87F /* Preview Content */,
+				6C769AE6287868DD00EFA87F /* Sounds */,
+				6C769AEA28786A6300EFA87F /* Helpers */,
+				6C769AE928786A5700EFA87F /* View */,
 			);
 			path = "Slot Machine";
 			sourceTree = "<group>";
@@ -70,6 +83,27 @@
 				6C769ADF2878670A00EFA87F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C769AE928786A5700EFA87F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C769ADA2878670700EFA87F /* ContentView.swift */,
+				6C21DD9D287C95AC002C74B8 /* InfoView.swift */,
+				6C21DD9F287C960A002C74B8 /* LogoView.swift */,
+				6C21DDA1287C9854002C74B8 /* ReelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C769AEA28786A6300EFA87F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6C21DD97287C93C8002C74B8 /* Extensions.swift */,
+				6C21DD99287C949D002C74B8 /* Modifiers.swift */,
+				6C21DD9B287C9577002C74B8 /* PlaySound.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C21DD9C287C9577002C74B8 /* PlaySound.swift in Sources */,
+				6C21DD9A287C949D002C74B8 /* Modifiers.swift in Sources */,
 				6C769ADB2878670700EFA87F /* ContentView.swift in Sources */,
+				6C21DD98287C93C8002C74B8 /* Extensions.swift in Sources */,
+				6C21DDA2287C9854002C74B8 /* ReelView.swift in Sources */,
+				6C21DDA0287C960A002C74B8 /* LogoView.swift in Sources */,
+				6C21DD9E287C95AC002C74B8 /* InfoView.swift in Sources */,
 				6C769AD92878670700EFA87F /* Slot_MachineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
